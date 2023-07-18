@@ -1,0 +1,57 @@
+body {
+    margin: 0px;
+}
+
+
+.page{
+
+    background-color: blueviolet;
+    width: 100vw;
+    height: 100vh;
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #83342b;
+}
+
+.header{
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #f8f8f0;
+    width: 100vw;
+    height: 12vh;
+
+}
+
+.logo{
+
+    width: 10vw;
+    height: auto;
+    margin: 0 10vw 0 2vw;
+}
+
+.book-button{
+    
+    width: 30vw;
+    height: 12vh;
+    margin-left: 10vw;
+}
+.header-container{
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+.content{
+
+    display: flex;
+    margin-top: 5vw;
+    width: 66.66666vw;
+    height: fit-content;
+}

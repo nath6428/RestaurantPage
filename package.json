@@ -1,0 +1,26 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rest.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nath6428/RestaurantPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nath6428/RestaurantPage/issues"
+  },
+  "homepage": "https://github.com/nath6428/RestaurantPage#readme",
+  "dependencies": {
+    "webpack": "^5.83.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.1"
+  }
+}
