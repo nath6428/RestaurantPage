@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    overflow-x: hidden;
 }
 
 
@@ -12,9 +13,9 @@ body {
     --moz-box-sizing: border-box;
     box-sizing: border-box; 
     display: flex;
-    align-items: center;
     flex-direction: column;
     background-color: #83342b;
+    
 }
 
 .header{
@@ -54,4 +55,45 @@ body {
     margin-top: 5vw;
     width: 66.66666vw;
     height: fit-content;
+}
+
+.mainDiv{
+    
+    display: none;
+    width: 64vw;
+    height: fit-content;
+    margin-left: 18vw;
+    margin-right: 18vw;
+    background-color: #f8f8f0;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.item-container{
+    
+    height: fit-content;
+    width: fit-content;
+    background-color: #f8f8f0;
+    margin: 4vw;
+}
+
+.name-tag{
+    
+}
+.desc-img-wrapper{
+
+    display: flex;
+    flex-direction: row;
+}
+.desc-tag{
+    
+    width: 45vw;
+}
+
+.item-pic{
+
+    width: 10vw;
+    height: 10vw;
+    margin-left: 2vw;
 }

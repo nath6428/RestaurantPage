@@ -1,5 +1,5 @@
 export default function layout(){
-
+    
     const header = document.createElement("div")
     const page = document.getElementById("page")
     const logo = document.createElement("img")
@@ -23,6 +23,7 @@ export default function layout(){
         const headerRedirectButton = document.createElement("button")
         const redirectList = ["Menu", "About Us", "Contact Us"]
         headerRedirectButton.innerText = redirectList[i]
+        headerRedirectButton.id = redirectList[i]
         headerContainer.appendChild(headerRedirectButton)
     
     }
@@ -30,3 +31,4 @@ export default function layout(){
 
     
 }
+
