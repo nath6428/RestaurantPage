@@ -10,6 +10,41 @@ body {
     overflow-x: hidden;
 }
 
+button{
+
+
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
 
 .page{
 
@@ -125,10 +160,27 @@ body {
     align-items: center;
     
 }
+.booking-form{
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1vw;
+}
 .booking-input{
 
     height: 2.5vh;
     width: 12vw;
     margin-top: 1vw;
+}
+
+.booking-time-selection{
+
+    margin-top: 1vw;
+}
+
+.submit-button{
+
+    margin-top: 1.5vw;
+
 }

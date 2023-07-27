@@ -61,21 +61,40 @@ export default function layout(){
 export function booking(){
     
     let toggle = 0;
-    const bookingDiv = document.createElement("div")
-    const inputBoxOne = document.createElement('input')
-    const inputBoxTwo = document.createElement('input')
 
+    const bookingForm = document.createElement("form")
+    bookingForm.className = "booking-form"
+    bookingForm.addEventListener('submit', () => {alert("Booking complete.")})
+    
+    const bookingDiv = document.createElement("div")
     bookingDiv.className = 'booking-div'
+    bookingDiv.appendChild(bookingForm)
+    
+    const inputBoxOne = document.createElement('input')
     inputBoxOne.className = 'booking-input'
-    inputBoxTwo.className = 'booking-input'
+    inputBoxOne.required = true
     inputBoxOne.placeholder = 'Name'
+
+    const inputBoxTwo = document.createElement('input')
+    inputBoxTwo.className = 'booking-input'
+    inputBoxTwo.required = true
     inputBoxTwo.placeholder = 'Phone Number (02X XXX XXXX)'
 
+    const bookingTimeSelection = document.createElement('select')
+    bookingTimeSelection.className = "booking-time-selection"
+    bookingTimeSelection.required = true
+
+    const submitButton = document.createElement('button')
+    submitButton.className = "submit-button"
+    submitButton.innerText = "Book"
+    
+    
+    
     bookTableButton.addEventListener('click', () => {
         
         bookingDiv.style.width = bookTableButton.offsetWidth + 'px'
         if (toggle == 0){
-
+            
             page.appendChild(bookingDiv)
             toggle = 1
         }
@@ -83,10 +102,19 @@ export function booking(){
             page.removeChild(bookingDiv)
             toggle = 0
         }
-       
-    
+        
+        
     })
     
-    bookingDiv.appendChild(inputBoxOne)
-    bookingDiv.appendChild(inputBoxTwo)
+    bookingForm.appendChild(inputBoxOne)
+    bookingForm.appendChild(inputBoxTwo)
+    bookingForm.appendChild(bookingTimeSelection)
+    bookingForm.appendChild(submitButton)
+    for (let time = 9; time < 23; time++){
+        
+        const timeOption = document.createElement('option')
+        timeOption.innerText = time + ":00 - " + (time + 1) + ":00"
+        bookingTimeSelection.appendChild(timeOption)
+    }
+    bookingTimeSelection.selectedIndex = -1
 }
