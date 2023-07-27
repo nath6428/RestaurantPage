@@ -1,5 +1,12 @@
+:root{
+
+    --width: 30vw;
+}
+
+
 body {
     margin: 0px;
+    background-color: #83342b;
     overflow-x: hidden;
 }
 
@@ -8,7 +15,7 @@ body {
 
     background-color: blueviolet;
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     --webkit-box-sizing: border-box;
     --moz-box-sizing: border-box;
     box-sizing: border-box; 
@@ -38,7 +45,7 @@ body {
 
 .book-button{
     
-    width: 30vw;
+    width: var(--width);
     height: 12vh;
     margin-left: 10vw;
 }
@@ -62,6 +69,8 @@ body {
     display: none;
     width: 64vw;
     height: fit-content;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     margin-left: 18vw;
     margin-right: 18vw;
     background-color: #f8f8f0;
@@ -96,4 +105,30 @@ body {
     width: 10vw;
     height: 10vw;
     margin-left: 2vw;
+}
+
+.contact-details, .about-para{
+
+    margin: 4vw;
+}
+
+.booking-div{
+    
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    height: 30vh;
+    margin-top: 12vh;
+    background-color: #f8f8f0;
+    
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.booking-input{
+
+    height: 2.5vh;
+    width: 12vw;
+    margin-top: 1vw;
 }
